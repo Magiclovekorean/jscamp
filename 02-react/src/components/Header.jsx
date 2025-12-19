@@ -16,8 +16,8 @@ export function Header () {
 
       <nav>
         <Link href="/search">Empleos</Link>
-
-        <a href='/search'>Sin SPA</a>
+        <a href="">ccccc</a>
+        <Link href="/counter">Counter</Link>
       </nav>
 
     </header>

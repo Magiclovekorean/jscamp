@@ -16,6 +16,7 @@ export function Header () {
       </Link>
 
       <nav>
+        <Link href="/counter">Contador</Link>
         <NavLink
           className={({ isActive }) => isActive ? 'nav-link-active' : ''}
           to="/search">Empleos</NavLink>

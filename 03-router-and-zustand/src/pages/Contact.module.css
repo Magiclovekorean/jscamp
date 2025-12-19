@@ -1,0 +1,5 @@
+.contactform{
+    display: flex;
+    flex-direction: column;
+    background-color: brown !important;
+}

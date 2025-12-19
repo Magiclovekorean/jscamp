@@ -1,0 +1,11 @@
+.container{
+    text-align: center;
+    padding-block: 10px;
+}
+
+.counter{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding-block: 10px;
+}
