@@ -80,6 +80,7 @@ export function SearchFormSection ({ onTextFilter, onSearch, initialText }) {
           </svg>
           
           <input
+            className="noBorder"
             ref={inputRef}
             name={idText} id="empleos-search-input" type="text"
             placeholder="Buscar trabajos, empresas o habilidades"
