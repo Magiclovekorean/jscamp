@@ -1,17 +1,33 @@
+import styles from './Contact.module.css';
+import { useState } from 'react';
 
 export function Contact() {
-    return (
-        <form className={styles.contactForm}>
-            <label htmlFor="name">Name:</label>
-            <input type="text" id="name" name="name" required />
+  const [buttonClass, setButtonClass] = useState(null);
+  const [sended, setSended] = useState(false);
 
-            <label htmlFor="email">Email:</label>
-            <input type="email" id="email" name="email" required />
+  function handleSubmit(event) {
+    event.preventDefault();
+    setButtonClass(styles.buttonClicked);
+    setSended(true);
+    console.log('Form submitted');
+  }
 
-            <label htmlFor="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+  return (
+    <form onSubmit={handleSubmit} className={styles.contactForm}>
+      <label htmlFor="name">Nombre:</label>
+      <input className={styles.input} type="text" id="name" name="name" required />
 
-            <button type="submit">Send</button>
-        </form>
-    )
+      <label htmlFor="email">Email:</label>
+      <input className={styles.input} type="email" id="email" name="email" required />
+
+      <label htmlFor="message">Mensaje:</label>
+      <textarea id="message" name="message" required />
+
+      <button type="submit" className={buttonClass ?? ''} disabled={sended}>
+        {sended ? 'Enviado' : 'Enviar'}
+      </button>
+    </form>
+  );
 }
+
+

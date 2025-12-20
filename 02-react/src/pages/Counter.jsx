@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import styles from './Counter.module.css'
 
 export function Counter() {
   const [value, setValue] = useState(0);
@@ -13,16 +14,18 @@ export function Counter() {
 
   function reset() {
     setValue(0);
-    }               
-
-
+  }
 
   return (
     <>
-      <p>Count is {value}</p>
-      <button onClick={increment}>+1</button>
-      <button onClick={decrement}>-1</button>
-      <button onClick={reset}>Reset</button>
+        <div className={styles.container}>
+            <p>La cuenta és {value}</p>
+            <div className={styles.counter}>
+                <button onClick={increment}>+1</button>
+                <button onClick={decrement}>-1</button>
+                <button onClick={reset}>Resetear</button>
+            </div>
+        </div>
     </>
   );
 }

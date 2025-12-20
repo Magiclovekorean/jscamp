@@ -221,8 +221,7 @@ form span {
 
 form input[type="text"] {
   flex: 1;
-  background: transparent;
-  border: none;
+  border: 1px solid var(--border);
   outline: none;
   color: var(--text-primary);
   padding: 0.75rem 0.5rem;

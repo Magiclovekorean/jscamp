@@ -1,0 +1,45 @@
+:root {
+  --primary: #3b4550;
+  --primary-dark: #0a3d66;
+  --primary-hover: #0d5ba8;
+  --primary-light: #09f;
+  --background: #06182a;
+  --text-primary: #ffffff;
+  --text-secondary: #cbd5e1;
+  --text-muted: #94a3b8;
+  --border: rgba(255, 255, 255, 0.1);
+  --card-bg: #1e293b;
+  --shadow: rgba(0, 0, 0, 0.3);
+  --input-bg: #1e293b;
+  --hsla-example: hsla(210, 100%, 56%, 1);
+}
+
+textarea{
+  font-size: larger;
+}
+
+input, textarea{
+  background-color: var(--input-bg) !important;
+  box-shadow: none;
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  padding:0.5rem;
+  width: initial !important;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    z-index: 100;
+}
+
+.buttonClicked{
+    background-color: rgb(9, 187, 9);
+}
