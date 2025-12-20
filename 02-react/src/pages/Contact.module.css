@@ -20,11 +20,12 @@ textarea{
 
 input, textarea{
   background-color: var(--input-bg) !important;
-  box-shadow: none;
-  border: 1px solid var(--border);
-  color: var(--text-primary);
-  padding:0.5rem;
+  box-shadow: none !important;
+  border: 1px solid var(--border) !important;
+  color: var(--text-primary) !important;
+  padding:0.5rem !important;
   width: initial !important;
+  border-radius: 4px !important;
 }
 
 .contactForm {
@@ -41,5 +42,5 @@ input, textarea{
 }
 
 .buttonClicked{
-    background-color: rgb(9, 187, 9);
+  background-color: rgb(9, 187, 9);
 }

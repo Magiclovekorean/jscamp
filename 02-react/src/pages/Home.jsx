@@ -35,6 +35,7 @@ export function HomePage () {
             </svg>
 
             <input
+              style={{border:'none'}}
               name="search"
               required
               type="text"
