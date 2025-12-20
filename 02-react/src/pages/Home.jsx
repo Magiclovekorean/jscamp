@@ -35,11 +35,11 @@ export function HomePage () {
             </svg>
 
             <input
-              style={{border:'none'}}
               name="search"
               required
               type="text"
               placeholder="Buscar empleos por título, habilidad o empresa"
+              className="noBorder"
             />
 
             <button type="submit">Buscar</button>

@@ -219,10 +219,14 @@ form span {
   flex-shrink: 0;
 }
 
+.noBorder {
+  border: none !important;
+}
+
 form input[type="text"] {
   flex: 1;
-  border: 1px solid var(--border);
-  padding: 0,5rem;
+  border: none;
+  padding: 0.5rem;
   color: var(--text-primary);
   font-size: 1rem;
   font-family: inherit;
