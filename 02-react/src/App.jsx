@@ -5,6 +5,7 @@ import { HomePage } from './pages/Home.jsx'
 import { SearchPage } from './pages/Search.jsx'
 import { Route } from './components/Route.jsx'
 import { Counter } from './pages/Counter.jsx'
+import { Contact } from './pages/Contact.jsx'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Route path="/" component={HomePage} />
       <Route path="/search" component={SearchPage} />
       <Route path="/counter" component={Counter} />
+      <Route path="/contact" component={Contact} />
       <Footer />
     </>
   )
