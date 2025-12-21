@@ -31,15 +31,15 @@ const useSearchForm = ({ idTechnology, idLocation, idExperienceLevel, idText, on
     }, 500)
   }
 
-  // 👇 aquest return ha d’estar dins de la funció
+  
   return {
     searchText,
     handleSubmit,
-    handleTextChange
+    handleTextChange,
   }
 }
 
-export function SearchFormSection({ onTextFilter, onSearch, initialText, onResetFilters, filters }) {
+export function SearchFormSection({ onTextFilter, onSearch, initialText, onResetFilters, hasActiveFilters,filters }) {
   const idText = useId()
   const idTechnology = useId()
   const idLocation = useId()
@@ -109,10 +109,12 @@ export function SearchFormSection({ onTextFilter, onSearch, initialText, onReset
             <option value="lead">Lead</option>
           </select>
 
-          <button onClick={onResetFilters}>Resetar filtros</button>
+          <button
+           onClick={onResetFilters}
+           disabled={!hasActiveFilters}
+           >Resetar filtros</button>
         </div>
       </form>
     </section>
   )
 }
-import { JobListings } from "../components/JobListings.jsx"
