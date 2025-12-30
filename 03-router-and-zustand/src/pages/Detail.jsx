@@ -5,6 +5,8 @@ import snarkdown from 'snarkdown'
 import styles from './Detail.module.css'
 import { useAuthStore } from "../store/authStore"
 import { useFavoritesStore } from "../store/favoritesStore"
+import { NavLink } from 'react-router'
+
 
 function JobSection ({ title, content }) {
   const html = snarkdown(content)
@@ -37,7 +39,7 @@ function DetailPageBreadCrumb ({ job }) {
           Empleos
         </Link>
         <span className={styles.breadcrumbSeparator}>/</span>
-        <span className={styles.breadcrumbCurrent}>{job.titulo}</span>
+        <span className={styles.breadcrumbCurrent} aria-label="Current job" aria-current >{job.titulo}</span>
       </nav>
     </div>
   )
